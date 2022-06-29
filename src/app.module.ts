@@ -6,6 +6,8 @@ import {PurchaseModule} from './purchase/purchase.module';
 import {ConfigModule} from '@nestjs/config';
 import {SequelizeModule} from '@nestjs/sequelize';
 import {UserModel} from "./user/user.model";
+import {ItemModel} from "./item/item.model";
+import {PurchaseModel} from "./purchase/purchase.model";
 
 
 @Module({
@@ -20,7 +22,7 @@ import {UserModel} from "./user/user.model";
             username: process.env.POSTGRES_USER,
             password: process.env.POSTGRES_PASSWORD,
             database: process.env.POSTGRES_DB,
-            models: [UserModel],
+            models: [UserModel, ItemModel, PurchaseModel],
             define: {
                 timestamps: false
             }

@@ -1,24 +1,24 @@
-import {IsString, Max, Min} from "class-validator";
+import {IsEmail, IsString} from "class-validator";
+import {ApiProperty} from "@nestjs/swagger";
 
 export class AuthDto{
-
-    @Max(64)
-    @Min(1)
+    @ApiProperty({example: 'string', description: 'User first name'})
     @IsString()
     firstName: string;
 
-    @Max(64)
-    @Min(1)
+    @ApiProperty({example: 'string', description: 'User last name'})
     @IsString()
     lastName: string;
 
-    @Min(4)
+    @ApiProperty({example: 'string', description: 'User password'})
     @IsString()
     password: string;
 
-    @IsString()
+    @ApiProperty({example: 'user@email.com', description: 'User email'})
+    @IsEmail()
     email: string;
 
+    @ApiProperty({example: 'string', description: 'User login'})
     @IsString()
     login: string;
 }
