@@ -58,6 +58,6 @@ POST /api/purchase/buy/:id - buy item
 GET /api/purchase/history - purchase history 
 ```
 
-##Swagger
+## Swagger
 
 Swagger is available on the following route: **host/api/docs**
