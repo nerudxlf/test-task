@@ -6,12 +6,12 @@
 Server application for a store with an admin panel.
 The application has the following features:
 
-1) registration;
-2) authorization;
-3) adding items to database;
-4) items editing;
-5) purchase of items;
-6) viewing the history of purchase.
+* __registration;__
+* __authorization;__
+* __adding items to database;__
+* __items editing;__
+* __purchase of items;__
+* __viewing the history of purchase.__
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
@@ -60,4 +60,4 @@ GET /api/purchase/history - purchase history
 
 ##Swagger
 
-Swagger is available on the following route: host/api/docs
+Swagger is available on the following route: **host/api/docs**
